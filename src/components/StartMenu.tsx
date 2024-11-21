@@ -6,8 +6,6 @@ import profile from '../assets/Profile.jpg';
 import mail from '../assets/Email.png';
 import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
-import allProgramsIcon from '../assets/icons/all-programs-1.png';
-import empty from '../assets/icons/empty.png'
 
 interface StartMenuProps {
   onClose: () => void;

@@ -1,12 +1,11 @@
 import './App.css';
 import xpicon from "./assets/xp-icon.png";
-import { X, Minus, Square, ChevronLeft, ChevronUp } from 'lucide-react';
+import { X, Minus, Square, ChevronLeft } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import Draggable from 'react-draggable';
 import StartMenu from './components/StartMenu';
 import volume from './assets/Volume.png';
 import wifi from './assets/Wireless Network Connection.png';
-import winUpd from './assets/Firewall.png';
 import music from './assets/My Music.png';
 import bishop from './assets/bishop.png';
 import Music from './components/Music.js';
@@ -21,7 +20,6 @@ import AboutMe from './components/AboutMe';
 import { LogIn } from './components/Startup/LogIn';
 import risk from './assets/risk.png'
 import PopUp from './components/PopUp/PopUp';
-import WorkoutTrackerOverview from './components/WorkoutTracker';
 import WorkoutTracker from './components/WorkoutTracker';
 //import signboard from './assets/signboard.png'
 
