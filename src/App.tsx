@@ -20,6 +20,9 @@ import Resume from './components/Resume';
 import AboutMe from './components/AboutMe';
 import { LogIn } from './components/Startup/LogIn';
 import risk from './assets/risk.png'
+import PopUp from './components/PopUp/PopUp';
+import WorkoutTrackerOverview from './components/WorkoutTracker';
+import WorkoutTracker from './components/WorkoutTracker';
 //import signboard from './assets/signboard.png'
 
 type WindowName = 'Music' | 'minesweeper' | 'About Me' | 'Projects' | 'Contact' | 'Resume' | 'workout-tracker' | 'discord-clone' | 'binary-bishop';
@@ -72,7 +75,8 @@ function App() {
     'minesweeper': <Minesweeper />,
     'binary-bishop': <BinaryBishop/>,
     'Resume': <Resume/>,
-    'About Me': <AboutMe/>
+    'About Me': <AboutMe/>,
+    'workout-tracker': <WorkoutTracker/>
   };
 
   const desktopIcons: DesktopIcon[] = [
@@ -428,6 +432,9 @@ function App() {
                 <img src={volume} alt="Start" className="button-icons" />
                 <img src={wifi} alt="wifi" className="button-icons" />
                 <img src={risk} alt="risk" className="button-icons" />
+                <div style={{ position: 'relative', width: 0, height: 0 }}>
+                  <PopUp />
+                </div>
               </div>
               <span className="clock">{formatTime(time)}</span>
             </div>

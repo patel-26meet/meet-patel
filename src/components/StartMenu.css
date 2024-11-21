@@ -148,23 +148,60 @@
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     background-clip: content-box;
-  }
+}
 
-  .menu-item {
+.menu-item {
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.menu-item:hover {
+  color: white
+}
+
+.start-menu-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.item{
     padding: 1px;
     display: flex;
     align-items: center;
     margin-bottom: 4px;
-  }
+}
 
-  .menu-item:hover {
-    color: white
-  }
+.item:hover{
+    color: white;
+    background-color: #2f71cd;
+}
 
-  .start-menu-item-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    position: relative;
-  }
+.start-menu-description {
+    line-height: 1.6;
+    color: #333;
+}
+
+.start-menu-description .name {
+  font-weight: bold;
+  color: #0078D7;
+}
+
+.start-menu-description .cool-stuff {
+  font-style: italic;
+  color: #008000;
+}
+
+.start-menu-description .windows-theme {
+  color: #0078D7;
+  font-weight: bold;
+}
+
+.start-menu-description .job-status {
+  color: #008000;
+  font-weight: bold;
+}
