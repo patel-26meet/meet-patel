@@ -114,19 +114,19 @@ const StartMenu: React.FC<StartMenuProps> = ({ onClose, isOpen }) => {
         <div className="start-menu-right">
           <div className='menu-item'>
             <img src={github} className='logos' alt="GitHub logo" />
-            <a href="" target="_blank" rel="noopener noreferrer" className="start-menu-item-text">
+            <a href="https://github.com/patel-26meet" target="_blank" rel="noopener noreferrer" className="start-menu-item-text">
               <span>GitHub</span>
             </a>
           </div>
           <div className='menu-item'>
             <img src={linkedin} className='logos' alt="LinkedIn logo" />
-            <a href="" target="_blank" rel="noopener noreferrer" className="start-menu-item-text">
+            <a href="https://www.linkedin.com/in/meet-patel-507361212t" target="_blank" rel="noopener noreferrer" className="start-menu-item-text">
               <span>LinkedIn</span>
             </a>
           </div>
           <div className='menu-item'>
             <img src={mail} className='logos' alt="Mail logo" />
-            <a href="" target="_blank" rel="noopener noreferrer" className="start-menu-item-text">
+            <a href="mailto:patel26meet@gmail.com" target="_blank" rel="noopener noreferrer" className="start-menu-item-text">
               <span>Mail</span>
             </a>
           </div>
