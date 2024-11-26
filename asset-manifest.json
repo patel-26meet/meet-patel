@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/meet-patel/static/css/main.410d3c9e.css",
-    "main.js": "/meet-patel/static/js/main.1547a8a7.js",
+    "main.js": "/meet-patel/static/js/main.4acba55a.js",
     "static/media/Profile.jpg": "/meet-patel/static/media/Profile.da92af5ef5ffb1b77c3b.jpg",
     "static/media/bg.jpg": "/meet-patel/static/media/bg.69514b7f2c594611a457.jpg",
     "static/media/My Music.png": "/meet-patel/static/media/My Music.7d663532c82d5d0efca6.png",
@@ -14,14 +14,15 @@
     "static/media/xp-icon.png": "/meet-patel/static/media/xp-icon.07479db6f169f4fff8b9.png",
     "static/media/workout-tracker.png": "/meet-patel/static/media/workout-tracker.7f9ad57c148b0cb1f611.png",
     "static/media/discord.png": "/meet-patel/static/media/discord.5f44ae0942487f404791.png",
+    "static/media/pdf.png": "/meet-patel/static/media/pdf.f34cf776aad2d18b33cc.png",
     "static/media/github.png": "/meet-patel/static/media/github.e8efa7f43ecd05b0a5e4.png",
     "static/media/linkedin.png": "/meet-patel/static/media/linkedin.d67e7b78b6c94e69f0e1.png",
     "index.html": "/meet-patel/index.html",
     "main.410d3c9e.css.map": "/meet-patel/static/css/main.410d3c9e.css.map",
-    "main.1547a8a7.js.map": "/meet-patel/static/js/main.1547a8a7.js.map"
+    "main.4acba55a.js.map": "/meet-patel/static/js/main.4acba55a.js.map"
   },
   "entrypoints": [
     "static/css/main.410d3c9e.css",
-    "static/js/main.1547a8a7.js"
+    "static/js/main.4acba55a.js"
   ]
 }
