@@ -274,13 +274,13 @@ function App() {
   };
 
   useEffect(()=>{
-    const initialWindows: WindowName[] = ['minesweeper','Resume'];
+    const initialWindows: WindowName[] = ['Resume','minesweeper'];
 
     const initialStates = {
       minesweeper: {
         isMaximized: false,
         isMinimized: false,
-        size: { width: '50vw', height: '40vh' },
+        size: { width: '40vw', height: '40vh' },
         position: { x: 50, y: 50 },
       },
       Resume: {
@@ -294,7 +294,7 @@ function App() {
     setOpenWindows(initialWindows);
     setWindowStates(initialStates);
 
-    
+
   },[])
   
 
