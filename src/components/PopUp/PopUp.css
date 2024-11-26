@@ -103,7 +103,7 @@
     background-color: rgba(170, 170, 170);
   }
   
-  .balloon__close::after {
+  .popUp__close::after {
     content: '';
     position: absolute;
     left: 5px;
@@ -114,19 +114,19 @@
     background-color: rgba(170, 170, 170);
   }
   
-  .balloon__header {
+  .popUp__header {
     display: flex;
     align-items: center;
     font-weight: 700;
   }
   
-  .balloon__header__img {
+  .popUp__header__img {
     width: 14px;
     height: 14px;
     margin-right: 8px;
   }
   
-  .balloon__text__first {
+  .popUp__text__first {
     margin: 5px 0 10px;
   }
   

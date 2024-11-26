@@ -41,7 +41,7 @@ const PopUp: FC<PopUpProps> = ({ startAfter = 3000, duration = 15000 }) => {
             Antivirus software might not be installed
           </p>
           <p className="popUp__text__second">
-            Click this baloon to fix this problem.
+            (Just added nostalgia, you dont really have anitvirus!)
           </p>
         </div>
       </div>
