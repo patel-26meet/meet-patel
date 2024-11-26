@@ -34,21 +34,6 @@ export const randomMines = (squares: Square[][], mines: number) => {
 }
 
 export const getMinesAround = (squares: Square[][]) => {
-    // for(let i=0; i<squares.length; i++){
-    //     for(let j=0; j<squares.length; j++){
-    //         if(squares[i][j].hasMine) continue
-
-    //         let mines = 0;
-    //         for (let k = i-1; k < i+1; k++) {
-    //             for (let l = j-1; l < j+1; l++) {
-    //                 if(squares?.[k]?.[l]?.hasMine) mines++      
-    //             }  
-    //         }
-
-    //         squares[i][j].neighbourMines = mines
-    //     }
-    // }
-
     for(let i=0; i<squares.length; i++){
         for(let j=0; j<squares.length; j++){
             if(squares[i][j].hasMine){

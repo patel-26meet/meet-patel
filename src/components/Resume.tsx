@@ -1,6 +1,16 @@
+import pdf from '../assets/pdf.png'
 const Resume = () => {
   return (
     <div style={{ fontFamily: 'Segoe UI', padding: '20px', color: '#333' }}>
+      <div style={{ position: 'absolute', top: '75px', right: '55px', zIndex: 10 }}>
+        <a href={`${process.env.PUBLIC_URL}/Meet_Patel.pdf`} download="Resume-Meet Patel.pdf">
+          <img
+            src={pdf}
+            alt="Download Resume"
+            style={{ width: '40px', height: '40px', cursor: 'pointer' }}
+          />
+        </a>
+      </div>
       <h1>Meet Patel</h1>
       <p>
         <strong>Email:</strong> 
@@ -16,8 +26,8 @@ const Resume = () => {
       <p>Sept 2020 – May 2024</p>
       <ul>
         <li>
-          Coursework: Database Systems, Object Oriented Programming, Data Structures and Algorithms,
-          Operating Systems, Compiler Construction, Design and Analysis of Algorithms, Cryptography
+          Coursework: Database Systems, Object Oriented Programming, Data Structures and Algorithms, Cryptography,
+          Operating Systems, Security analysis and Portfoliio Management
         </li>
       </ul>
 
@@ -30,13 +40,20 @@ const Resume = () => {
       </p>
       <ul>
         <li>
-        Implemented several functional components contributing to front-end development with React/JavaScript/CSS
+        Successfully parallelized Cypress test automation reducing E2E testing time by <span style={{fontWeight: 'bold'}}>90%(3+ hours to 30 mins)</span>
         </li>
         <li>
-        Successfully parallelized Cypress test automation reducing E2E testing time by 90% (3+ hours to 30 minutes)
+        Contributed to front-end development by creating functional components for using <span style={{fontStyle: 'italic'}}>React/JavaScript/CSS</span> 
         </li>
         <li>
-          Authored shell scripts for YAML-to-JSON configuration of multiple key-value pairs</li>
+        Configured .json files to ensure proper access control resolving IDOR vulnerabilities for <span style={{fontWeight: 'bold'}}>3 </span>customers
+        </li>
+        <li>
+        Authored shell scripts for YAML-to-JSON configuration of key-value pairs reducing effort by <span style={{fontWeight: 'bold'}}>15%</span>
+        </li>      
+        <li>
+        Tools Used: React, Cypress, JavaScript/CSS, Shell        
+        </li> 
       </ul>
 
       <h2>Projects</h2>
@@ -49,11 +66,13 @@ const Resume = () => {
       </h3>
       <ul>
         <li>
-          Created a full-stack fitness application featuring user authentication and workout
-          recommendations
+        Built a full-stack application with <span style={{fontWeight: 'bold'}}>JSON Web Token</span> based authentication and <span style={{fontStyle: 'italic'}}>RESTful APIs</span> for workout management
         </li>
         <li>
-          Built a dynamic dashboard for workout logging and historical performance analysis
+        Implemented <span style={{fontWeight: 'bold'}}></span>custom middleware for user <span style={{fontStyle: 'italic'}}>session handling</span> and <span style={{fontStyle: 'italic'}}>data validation</span> to ensure secure data access
+        </li>
+        <li>
+        Designed a responsive dashboard featuring <span style={{fontStyle: 'italic'}}>workout tracking</span> with graphical representations showing progress
         </li>
         <li>Tools Used: React, Node, MongoDB Atlas</li>
       </ul>
@@ -66,13 +85,14 @@ const Resume = () => {
       </h3>
       <ul>
         <li>
-          Engineered a chess engine implementing algorithms like Alpha-Beta pruning and dynamic
-          programming (transposition tables and Zobrist hashing) for position caching
+        Engineered a chess engine, implementing algorithms like <span style={{fontWeight: 'bold'}}>Alpha-Beta pruning</span> for efficient move evaluation
         </li>
         <li>
-          Designed a comprehensive chess evaluation algorithm incorporating piece values, positional
-          tables, mobility metrics, and space control factors with distinct midgame/endgame
-          weighting distinctions.
+        Optimized engine performance using dynamic programming with <span style={{fontStyle: 'italic'}}>transposition tables</span> and <span style={{fontStyle: 'italic'}}>zobrist hashing</span>
+        for <span style={{fontWeight: 'bold'}}></span>position caching
+        </li>
+        <li>
+        Designed an <span style={{fontWeight: 'bold'}}>evaluation algorithm</span> on <span style={{fontWeight: 'bold'}}>piece and mobility values, positional tables, and space control factors</span>
         </li>
         <li>Tools Used: Python, python-chess</li>
       </ul>
@@ -85,12 +105,13 @@ const Resume = () => {
       </h3>
       <ul>
         <li>
-          Developed a Discord clone featuring real-time messaging and comprehensive server/member
-          management
+        Developed a Discord clone featuring <span style={{fontWeight: 'bold'}}>real-time messaging</span> with WebSocket integration for instant updates
         </li>
         <li>
-          Implemented functionalities such as unique invite links, sharing of images/PDFs, real-time
-          message editing and deletion
+        Implemented comprehensive <span style={{fontWeight: 'bold'}}>server/member management</span> system with role-based access control
+        </li>
+        <li>
+        Built advanced features including <span style={{fontStyle: 'italic'}}>unique invite links, file sharing, and real-time message editing/deletion</span>
         </li>
         <li>Tools Used: Next.js, Prisma, Clerk, Tailwind CSS, ShadcnUI, MySQL</li>
       </ul>
@@ -98,27 +119,27 @@ const Resume = () => {
       <h3>Password Manager</h3>
       <p>Mar 2022 - Apr 2022</p>
       <ul>
-        <li>Created a password manager to store, manage, and encrypt passwords</li>
         <li>
-          Implemented functionalities such as unique invite links, sharing of images/PDFs, real-time
-          message editing and deletion
+        Developed a password manager to <span style={{fontWeight: 'bold'}}>store, manage and encrypt</span> passwords
+        </li>
+        <li>
+        Implemented secure features including <span style={{fontStyle: 'italic'}}>password generation</span> and <span style={{fontStyle: 'italic'}}></span>password sharing
+        </li>
+        <li>
+        Stored the required information using MySQL and enabled two-factor authentication
         </li>
         <li>Tools Used: MySQL, Node.js, React, Express</li>
       </ul>
 
       <h2>Technical Proficiency</h2>
       <p>
-        <strong>Languages:</strong> React, Node, JavaScript, TypeScript, Next.js, C++, C, Java,
-        Python
+        <strong>Technologies/frameworks:</strong> React, Node.js, Next.js, Express, Git, Cypress
+      </p>
+      <p>
+        <strong>Languages:</strong> JavaScript, TypeScript, Python, Java, C++, C
       </p>
       <p>
         <strong>Databases:</strong> MySQL, MongoDB
-      </p>
-      <p>
-        <strong>Testing Frameworks:</strong> Cypress
-      </p>
-      <p>
-        <strong>DevOps Tool:</strong> Git
       </p>
 
       <h2>Positions of Responsibility</h2>
@@ -128,15 +149,15 @@ const Resume = () => {
         <strong>Roles:</strong> President, Secretary
       </p>
       <ul>
-        <li>Led a team of 150+ members to organize 10+ events throughout the years</li>
+        <li>Led a team of <span style={{fontWeight: 'bold'}}></span>150+ members to organize <span style={{fontWeight: 'bold'}}></span>10+ events throughout the years</li>
         <li>
-          Organized the biggest cultural event on campus with a footfall of 2000+ and generated 2
-          lakhs of revenue
+          Organized the biggest cultural event on campus with a footfall of <span style={{fontWeight: 'bold'}}>2000+</span> and generated <span style={{fontWeight: 'bold'}}>2
+          lakhs of revenue</span>
         </li>
       </ul>
 
       <h4>Need a PDF?</h4>
-      <a href={`${process.env.PUBLIC_URL}/Meet Patel.pdf`} download="Resume-Meet Patel.pdf">
+      <a href={`${process.env.PUBLIC_URL}/Meet_Patel.pdf`} download="Resume-Meet Patel.pdf">
           Download it here!
       </a>
 

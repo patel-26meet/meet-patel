@@ -272,6 +272,30 @@ function App() {
     window.addEventListener('mousemove', onMouseMove);
     window.addEventListener('mouseup', onMouseUp);
   };
+
+  useEffect(()=>{
+    const initialWindows: WindowName[] = ['minesweeper','Resume'];
+
+    const initialStates = {
+      minesweeper: {
+        isMaximized: false,
+        isMinimized: false,
+        size: { width: '50vw', height: '40vh' },
+        position: { x: 50, y: 50 },
+      },
+      Resume: {
+        isMaximized: false,
+        isMinimized: false,
+        size: { width: '60vw', height: '50vh' },
+        position: { x: 200, y: 100 },
+      },
+    };
+  
+    setOpenWindows(initialWindows);
+    setWindowStates(initialStates);
+
+    
+  },[])
   
 
   return (

@@ -120,7 +120,7 @@ const Minesweeper = () => {
             </div>
             <div className="minesweeper-text">
                <div>  Normal minesweeper rules...  </div>
-               <div>  Right Click to add flag '🚩' </div>
+               <div>  Right Click (long press on phone) to add flag '🚩' </div>
                <div>  10 Mines </div>
             </div>
         </div>
