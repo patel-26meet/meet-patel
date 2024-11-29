@@ -21,7 +21,6 @@ import { LogIn } from './components/Startup/LogIn';
 import risk from './assets/risk.png'
 import PopUp from './components/PopUp/PopUp';
 import WorkoutTracker from './components/WorkoutTracker';
-//import signboard from './assets/signboard.png'
 
 type WindowName = 'Music' | 'minesweeper' | 'About Me' | 'Projects' | 'Contact' | 'Resume' | 'workout-tracker' | 'discord-clone' | 'binary-bishop';
 
@@ -64,8 +63,8 @@ function App() {
   }
 
   const DEFAULT_WINDOW_SIZE = {
-    width: '70vw',
-    height: 'calc(70vh - 20px)'
+    width: window.innerWidth > 600 ? '70vw' : '90vw', 
+    height: window.innerWidth > 600 ? 'calc(70vh - 20px)' : '60vh'
   };
 
   const windowComponents: WindowComponents = {
@@ -235,8 +234,8 @@ function App() {
         newY = startPosY + deltaY;
       }
   
-      const minWidth = 300;
-      const minHeight = 200;
+      const minWidth = window.innerWidth > 600 ? 300 : 200;
+      const minHeight = window.innerWidth > 600 ? 200 : 150;
 
       newWidth = Math.max(newWidth, minWidth);
       newHeight = Math.max(newHeight, minHeight);
@@ -273,29 +272,40 @@ function App() {
     window.addEventListener('mouseup', onMouseUp);
   };
 
-  useEffect(()=>{
-    const initialWindows: WindowName[] = ['Resume','minesweeper'];
-
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768; 
+    const initialWindows: WindowName[] = ['Resume', 'minesweeper'];
+  
     const initialStates = {
       minesweeper: {
         isMaximized: false,
         isMinimized: false,
-        size: { width: '40vw', height: '40vh' },
-        position: { x: 50, y: 50 },
+        size: {
+          width: isMobile ? '60vw' : '40vw', 
+          height: isMobile ? '37vh' : '40vh',
+        },
+        position: {
+          x: isMobile ? 10 : 50, 
+          y: isMobile ? 10 : 50,
+        },
       },
       Resume: {
         isMaximized: false,
         isMinimized: false,
-        size: { width: '60vw', height: '50vh' },
-        position: { x: 200, y: 100 },
+        size: {
+          width: isMobile ? '70vw' : '60vw', 
+          height: isMobile ? '60vh' : '50vh',
+        },
+        position: {
+          x: isMobile ? 5 : 200,
+          y: isMobile ? 80 : 100,
+        },
       },
     };
   
     setOpenWindows(initialWindows);
     setWindowStates(initialStates);
-
-
-  },[])
+  }, []);
   
 
   return (
@@ -317,15 +327,6 @@ function App() {
               ))}
             </div>
           </div>
-
-
-          {/*<div className='signboard'>
-            <div className='signboard-text'>
-              Hire me?
-            </div>
-            <img src={signboard}/>
-          </div>*/}
-          
 
           {openWindows.map((windowName) => {
             const windowState = windowStates[windowName];
