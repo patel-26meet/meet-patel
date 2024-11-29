@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/meet-patel/static/css/main.3251cbd4.css",
-    "main.js": "/meet-patel/static/js/main.e72af00c.js",
+    "main.css": "/meet-patel/static/css/main.ff7bc45e.css",
+    "main.js": "/meet-patel/static/js/main.3219a131.js",
     "static/media/Profile.jpg": "/meet-patel/static/media/Profile.da92af5ef5ffb1b77c3b.jpg",
     "static/media/bg.jpg": "/meet-patel/static/media/bg.69514b7f2c594611a457.jpg",
     "static/media/My Music.png": "/meet-patel/static/media/My Music.7d663532c82d5d0efca6.png",
@@ -18,11 +18,11 @@
     "static/media/github.png": "/meet-patel/static/media/github.e8efa7f43ecd05b0a5e4.png",
     "static/media/linkedin.png": "/meet-patel/static/media/linkedin.d67e7b78b6c94e69f0e1.png",
     "index.html": "/meet-patel/index.html",
-    "main.3251cbd4.css.map": "/meet-patel/static/css/main.3251cbd4.css.map",
-    "main.e72af00c.js.map": "/meet-patel/static/js/main.e72af00c.js.map"
+    "main.ff7bc45e.css.map": "/meet-patel/static/css/main.ff7bc45e.css.map",
+    "main.3219a131.js.map": "/meet-patel/static/js/main.3219a131.js.map"
   },
   "entrypoints": [
-    "static/css/main.3251cbd4.css",
-    "static/js/main.e72af00c.js"
+    "static/css/main.ff7bc45e.css",
+    "static/js/main.3219a131.js"
   ]
 }
